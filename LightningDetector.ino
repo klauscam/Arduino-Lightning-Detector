@@ -73,15 +73,15 @@ void loop() {
 
 void sendData()
 {
-  Serial.print(">>>");
-  Serial.println(batchStarted);
+  //Serial.print(">>>");
+  //Serial.println(batchStarted);
   
   for (int i=0;i<data;i++){
     Serial.println(storage[i]);
   }
-  Serial.print("<<<");
-  Serial.println(batchEnded);
-  Serial.println("END");
+  //Serial.print("<<<");
+  //Serial.println(batchEnded);
+  //Serial.println("END");
   
   toSend=false;
 }
