@@ -25,10 +25,10 @@ Prerequisites
 As you might already know, the pins on the Arduino board allow for voltages between 0v and 5v, anything below 0v and above 5v will not be read,hence data will be lost. 
 More importantly, voltages below 0v will potentially damage the pin. This will create a little problem for us because the voltages produced in the wire fluctuate below and above 0v. To solve this problem we set the pin voltage in the middle of the 5v range, at 2.5v and this will be accomplished using a little trick, a voltage divider. In doing so, we will be setting the pin to a steady 2.5v and the voltage fluctuations will have an origin of 2.5v, hence no damage or loss of data.
 
-Lightning Detector Circuit Diagram
-Lightning Detector Circuit Diagram
-Lightning Detector
-Lightning Detector
+![Diagram 1](https://github.com/klauscam/Arduino-Lightning-Detector/blob/master/images/lightningdetector.png)
+
+![Diagram 2](https://github.com/klauscam/Arduino-Lightning-Detector/blob/master/images/lightningdetector_schem-1-e1466701621717-768x851.png)
+
 
 The circuit is pretty straight forward, we have 2x 10k Ohm resistors in series from 5v (red wire) to GND (black wire), this is basically the voltage divider. Then a 3.3M Ohm (MegaOhm) resistor is connected between the 2x 10k Ohm resistor. In series with the 3.3M Ohm resistor attach a wire to pin A4 (blue wire), this will give us exactly 2.5v on pin A4. Then attach a wire which will act as an antenna (green wire) of around 6-8 inch in length. This should be connected from one end only as shown above.
 
@@ -45,9 +45,10 @@ Results
 ====
 The following are some results.
 
-lightningexmple-2
+![Result 1](https://github.com/klauscam/Arduino-Lightning-Detector/blob/master/images/lightningexmple-2.png)
 
-lightningexmple-1
+![Result 2](https://github.com/klauscam/Arduino-Lightning-Detector/blob/master/images/lightningexmple-1.png)
+
 
 Please feel free to comment below if you need any further clarifications.
 
