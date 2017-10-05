@@ -85,4 +85,4 @@ Bitcoin donation
 If you like it please consider sending me some bitcoin this encourages to work on harder and cooler projects.
 
 ![1D4sfJHwES5YNH7r6XX8A9BzCdzTjFLagm](https://github.com/klauscam/Arduino-Lightning-Detector/blob/master/images/qrcodeBitcoin.png)
-
+1D4sfJHwES5YNH7r6XX8A9BzCdzTjFLagm
