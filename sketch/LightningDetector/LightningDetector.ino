@@ -23,9 +23,9 @@ bool toSend;
 void setup() {
 #if FASTADC
  // set prescale to 16
- sbi(ADCSRA,ADPS2) ;
- cbi(ADCSRA,ADPS1) ;
- cbi(ADCSRA,ADPS0) ;
+ sbi(ADCSRA,ADPS2);
+ cbi(ADCSRA,ADPS1);
+ cbi(ADCSRA,ADPS0);
 #endif
   // put your setup code here, to run once:
   Serial.begin(115200);
@@ -44,30 +44,24 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  reading = (analogRead(A4));
+  reading = analogRead(A4);
   storage[count]=reading;
-  if ((!toSend)&&(count!=0)&&((reading>storage[count-1]+10)||(reading<storage[count-1]-10))){
+  if ((!toSend)&&(count!=0)&&((reading>storage[count-1]+10)||(reading<storage[count-1]-10)))
+  {
       toSend=true;
   }
   
-  count=count+1;
-  if ((count == 512) && (toSend))
+  count++;
+  if (count == 512)
   {
     count=0;
     batchEnded = millis();
-    sendData();
+    if (toSend)
+    {
+      sendData();
+    }
     batchStarted = millis();
-    
   }
-  else if (count==512){
-    count=0;
-    batchEnded = millis();
-    //sendData();
-    batchStarted = millis();
-  
-  }
-
- 
 }
 
 void sendData()
@@ -78,6 +72,7 @@ void sendData()
   for (int i=0;i<data;i++){
     Serial.println(storage[i]);
   }
+  
   //Serial.print("<<<");
   //Serial.println(batchEnded);
   //Serial.println("END");
