@@ -16,8 +16,6 @@ long batchStarted;
 long batchEnded;
 int reading;
 int count;
-int maximum;
-int minimum;
 bool toSend;
 
 void setup() {
@@ -36,8 +34,6 @@ void setup() {
   batchEnded=0;
   reading=0;
   count=0;
-  maximum=0;
-  minimum=1023;
   toSend=false;
 }
 
