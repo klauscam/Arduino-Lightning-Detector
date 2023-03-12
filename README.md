@@ -80,10 +80,3 @@ Update 3
 
 Note that the device is very sensitive to EMF fluctuations. This includes AC power supplies. Place the device away from any AC supply and any socket outlets. We have also noticed that it behaves abnormal when connected to a laptop while charging. We recommend to use a laptop running on batteries only for optimum performance.
 
-Bitcoin donation
-================
-
-If you like it please consider sending me some bitcoin this encourages to work on harder and cooler projects.
-
-![1D4sfJHwES5YNH7r6XX8A9BzCdzTjFLagm](https://github.com/klauscam/Arduino-Lightning-Detector/blob/master/images/qrcodeBitcoin.png)
-1D4sfJHwES5YNH7r6XX8A9BzCdzTjFLagm
